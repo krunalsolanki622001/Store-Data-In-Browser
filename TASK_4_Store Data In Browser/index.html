@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Store Data In Browser</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jscode.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <form method="post" onsubmit="return save()">
+        <h1 align="center" style="color:orange;">Storing Data In Browser</h1>
+        <div class="container">
+            <h3 align="center">Sign Up Form</h3>
+            <hr>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Enter Name</b></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Enter Email</b></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="mail" placeholder="Enter Email">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Enter Mobile Number</b></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="mno" placeholder="Enter Mobile Number">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Select Country</b></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cntry" value="India">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Select State</b></label>
+                <div class="col-sm-9">
+                    <select id="st" class="form-control" onclick="state()">
+                        <option value="">Select State</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Rajesthan">Rajesthan</option>
+                        <option value="Panjab">Panjab</option>
+                        <option value="Up">Up</option>
+                        <option value="Maharastra">Maharastra</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Select City</b></label>
+                <div class="col-sm-9">
+                    <select id="ct" class="form-control" disabled>
+                        <option value="">Select City</option>
+                        <option value="ct1"></option>
+                        <option value="ct2"></option>
+                        <option value="ct3"></option>
+                        <option value="ct4"></option>
+                        <option value="ct5"></option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"><b>Enter Address</b></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="add" placeholder="Enter Address">
+                </div>
+            </div>
+            <div class="form-group row">
+                <input type="submit" class="col-sm-3 btn btn-primary" value="Save">
+                <div class="col-sm-3">
+                    <input type="button" class="form-control btn btn-primary" onclick="search()" value="Search">
+                </div>
+            </div>
+            <hr>
+            <div class="alert alert-danger" role="alert">
+                <a href="#name" id="er1" class="alert-link"></a>
+                <a href="#mail" id="er2" class="alert-link"></a>
+                <a href="#mno" id="er3" class="alert-link"></a>
+                <a href="#st" id="er4" class="alert-link"></a>
+                <a href="#add" id="er7" class="alert-link"></a>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

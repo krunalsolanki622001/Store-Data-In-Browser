@@ -1,0 +1,23 @@
+.container
+{
+    font-family: serif;
+    
+    margin-left: auto;
+    margin-right: auto; 
+    border: blue 2px double;
+    border-radius: 5%;
+    padding: 30px;
+    background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+h1{
+    border:burlywood 2px solid;
+    border-radius: 20%;
+}
+#er1,#er2,#er3, #er4, #er5, #er6, #er7{
+    color: red;
+}
+
